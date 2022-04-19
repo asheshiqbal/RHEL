@@ -1,2 +1,11 @@
 
 ansible [ip/hostgroup] -m ping
+
+Inventory: /etc/ansible/hosts
+  Group
+  All
+Module
+  default - command
+  ping
+  raw
+  
