@@ -6,11 +6,16 @@ ansible -b -a '<command>' [ip/hostgroup]
 
 Inventory: /etc/ansible/hosts
   Group
+    ansible_user=
+    ansible_password=
   All
   
 Module
   command (default)
   ping
   raw
+  shell
   yum/apt i.e. ansible -b -m yum/apt -a 'name=<package-name> state=present/absent/latest' [ip/hostgroup]
   service i.e. ansible -b -m service -a 'name=<service-name> state=started/enabled=true' [ip/hostgroup]
+  file
+  copy
