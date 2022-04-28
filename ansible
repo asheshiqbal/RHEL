@@ -2,7 +2,6 @@
 ### ANSIBLE ###
 ###############
 
-
 ansible -m ping [ip/hostgroup]
 ansible -a '<command>' [ip/hostgroup]
 ansible -b -a '<command>' [ip/hostgroup]
@@ -24,3 +23,7 @@ Module
   copy i.e. ansible -b -m copy -a 'src=<file-path> dest=<file-path>' [ip/hostgroup]
 
 Playbook - can use variables, conditional statements etc.
+  ansible-playbook [-v] [-b] <file-name>.yaml
+  YAML - Yet Another Markup Language
+  Taks
+  Handlers
