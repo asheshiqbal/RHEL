@@ -3,6 +3,7 @@ ansible -m ping [ip/hostgroup]
 ansible -a '<command>' [ip/hostgroup]
 ansible -b -a '<command>' [ip/hostgroup]
 
+
 Inventory: /etc/ansible/hosts
   Group
   All
@@ -11,4 +12,5 @@ Module
   command (default)
   ping
   raw
-  
+  yum/apt i.e. ansible -b -m yum/apt -a 'name=<package-name> state=present/absent/latest' [ip/hostgroup]
+  service i.e. ansible -b -m service -a 'name=<service-name> state=started/enabled=true' [ip/hostgroup]
